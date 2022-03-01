@@ -8,7 +8,7 @@ class TestPlugin(unittest.TestCase):
     def setUpClass(self):
         self.skill_id = "replace-repo-name.replace-author"
 
-    def test_something(self):
+    def test_find_plugin(self):
         plugins = find_skill_plugins()
         self.assertIn(self.skill_id, list(plugins))
 
