@@ -48,6 +48,9 @@ jobs:
       - name: Install ovos dependencies
         run: |
           pip install ovos-skills-manager~=0.0.10
+      - name: Install test dependencies
+        run: |
+          pip install pytest pytest-timeout pytest-cov
       - name: Install skill with osm
         run: |
           pytest test/osm_tests.py
