@@ -1,4 +1,4 @@
-name: Run Plugin Tests
+name: Run Install Tests
 on:
   push:
     branches:
@@ -7,9 +7,6 @@ on:
     branches:
       - dev
     paths-ignore:
-      - 'version.py'
-      - 'test/**'
-      - 'examples/**'
       - '.github/**'
       - '.gitignore'
       - 'LICENSE'
