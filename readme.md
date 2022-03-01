@@ -21,11 +21,9 @@ workflows are setup so you never touch a version file, make a github release or 
   - run codecov
   - run unit tests
   - run license tests if requirements.txt changes
-  - run build tests
-- on commit to master
-  - run unit tests
-  - run license tests
-  - run build tests
+  - run plugin tests
+- on commit to dev
+  - auto translate resource files
 - manually trigger one of the workflows for major/minor/build/alpha release in the actions tab
   - increase package version
   - generate changelog
@@ -33,6 +31,5 @@ workflows are setup so you never touch a version file, make a github release or 
   - merge dev to master
   - create github release
   - publish to pypi
-- manually trigger a push dev -> master
 
 
