@@ -38,7 +38,7 @@ jobs:
           python -m pip install git+https://github.com/NeonGeckoCom/neon-lang-plugin-google_translate
       - name: Auto Translate
         run: |
-          python scripts/trandcslate.py
+          python scripts/translate.py
       - name: Increment Version
         run: |
           VER=$(python setup.py --version)
