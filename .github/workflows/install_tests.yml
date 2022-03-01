@@ -50,4 +50,4 @@ jobs:
           pip install ovos-skills-manager~=0.0.10
       - name: Install skill with osm
         run: |
-          python scripts/osm_install.py
+          pytest test/osm_tests.py
