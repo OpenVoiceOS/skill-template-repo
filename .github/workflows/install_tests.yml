@@ -47,7 +47,7 @@ jobs:
           python-version: 3.8
       - name: Install ovos dependencies
         run: |
-          pip install ovos-skills-manager~=0.0.10
+          pip install  ovos-plugin-manager ovos-skills-manager~=0.0.10
       - name: Install test dependencies
         run: |
           pip install pytest pytest-timeout pytest-cov
