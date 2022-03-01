@@ -1,9 +1,9 @@
-from ovos_skills_manager import SkillEntry
 # write your first unittest!
 import unittest
-from ovos_plugin_manager.skills import find_skill_plugins
 from os.path import exists
 from shutil import rmtree
+
+from ovos_skills_manager import SkillEntry
 
 branch = "dev"
 url = f"https://github.com/replace-author/replace-repo-name@{branch}"
@@ -30,7 +30,3 @@ class TestOSM(unittest.TestCase):
 
         updated = skill.install(folder=tmp_skills, default_branch=branch)
         self.assertEqual(updated, False)
-
-
-
-
