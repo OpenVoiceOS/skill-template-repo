@@ -7,7 +7,7 @@ on:
     branches:
       - dev
     paths:
-      - 'requirements/**'
+      - 'requirements.txt'
       - 'setup.py'
   workflow_dispatch:
 
