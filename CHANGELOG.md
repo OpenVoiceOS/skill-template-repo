@@ -1,8 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-template-repo/tree/HEAD)
+## [V0.0.0a2](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.0.0a2) (2022-03-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/36cf5e3d9a73a6088843650f68986d34019effef...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.0a1...V0.0.0a2)
+
+## [V0.0.0a1](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.0.0a1) (2022-03-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/36cf5e3d9a73a6088843650f68986d34019effef...V0.0.0a1)
 
 **Fixed bugs:**
 
