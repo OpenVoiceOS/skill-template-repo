@@ -34,10 +34,7 @@ class TestPadaos(unittest.TestCase):
         for root, folders, files in os.walk(self.res_folder):
             for f in files:
                 if f.endswith(".intent"):
-                    path = join(root, f)
-                    with open(path) as fi:
-                        samples = [_.strip() for _ in fi.read().split("\n")
-                                   if _ and not _.strip().startswith("#")]
+                    samples = read_samples(join(root, f))
                     for s in samples:
                         self.assertEqual(self.engine.calc_intent(s),
                                          {'entities': {}, 'name': f.replace(".intent", "")})
