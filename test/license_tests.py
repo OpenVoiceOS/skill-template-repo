@@ -22,7 +22,7 @@ allow_unknown = False
 allow_unlicense = True
 allow_ambiguous = False
 
-pkg_name = "replace_package_name"
+pkg_name = "ovos-skill-replace-repo-name"
 
 
 class TestLicensing(unittest.TestCase):
