@@ -3,7 +3,7 @@ from mycroft.skills import intent_handler
 from ovos_workshop.skills import OVOSSkill
 
 
-class ReplacePackageNameSkill(OVOSSkill):
+class ReplaceSkillNameSkill(OVOSSkill):
     def initialize(self):
         """ Perform any final setup needed for the skill here.
         This function is invoked after the skill is fully constructed and
@@ -31,4 +31,4 @@ class ReplacePackageNameSkill(OVOSSkill):
 
 
 def create_skill():
-    return ReplacePackageNameSkill()
+    return ReplaceSkillNameSkill()
