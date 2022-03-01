@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/skill-template-repo/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.1...HEAD)
+
+**Merged pull requests:**
+
+- Feat/skill loading tests [\#8](https://github.com/OpenVoiceOS/skill-template-repo/pull/8) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.1](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.0.1) (2022-03-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.1a1...V0.0.1)
+
 ## [V0.0.1a1](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.0.1a1) (2022-03-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.0...V0.0.1a1)
