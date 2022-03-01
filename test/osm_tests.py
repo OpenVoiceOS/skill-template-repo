@@ -6,15 +6,12 @@ from shutil import rmtree
 from ovos_skills_manager import SkillEntry
 
 branch = "dev"
-url = f"https://github.com/replace-author/replace-repo-name@{branch}"
-# TODO delete this override when making a new skill
 url = f"https://github.com/OpenVoiceOS/skill-template-repo@{branch}"
-
 
 class TestOSM(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.skill_id = "replace-repo-name.replace-author"
+        self.skill_id = "skill-template-repo.OpenVoiceOS"
 
     def test_osm_install(self):
         skill = SkillEntry.from_github_url(url)
