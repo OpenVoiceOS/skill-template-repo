@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-template-repo/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.1.0a1...HEAD)
+
+**Merged pull requests:**
+
+- Feat/test osm/msm [\#9](https://github.com/OpenVoiceOS/skill-template-repo/pull/9) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.1.0a1](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.1.0a1) (2022-03-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.0.1...V0.1.0a1)
 
 **Merged pull requests:**
 
