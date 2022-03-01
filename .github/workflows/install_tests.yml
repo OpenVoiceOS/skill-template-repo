@@ -33,7 +33,7 @@ jobs:
           pip install pytest pytest-timeout pytest-cov
       - name: Install ovos dependencies
         run: |
-          pip install ovos-plugin-manager ovos-core~=0.0.2a12[skills]
+          pip install ovos-plugin-manager ovos-core[skills]~=0.0.2a11
       - name: Install package
         run: |
           pip install .
