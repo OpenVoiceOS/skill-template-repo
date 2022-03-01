@@ -1,0 +1,40 @@
+import os
+from os.path import dirname, join, exists
+
+from googletranslate_neon_plugin import GoogleTranslator
+
+tx = GoogleTranslator()
+
+src_lang = "en-us"
+target_langs = ["es-es", "de-de", "fr-fr", "it-it", "pt-pt"]
+
+exts = [".voc", ".dialog", ".intent", ".entity"]
+res_folder = join(dirname(dirname(__file__)), "locale")
+
+src_files = {}
+for root, dirs, files in os.walk(res_folder):
+    if src_lang not in root:
+        continue
+    for f in files:
+        if any(f.endswith(e) for e in exts):
+            src_files[f] = join(root, f)
+
+for lang in target_langs:
+    os.makedirs(join(res_folder, lang), exist_ok=True)
+
+    for name, src in src_files.items():
+        dst = join(res_folder, lang, name)
+        if exists(dst):
+            continue
+
+        with open(src) as f:
+            lines = [l for l in f.read().split("\n") if l and not l.startswith("#")]
+
+        with open(dst, "w") as f:
+            f.write(f"# auto translated from {src_lang} to {lang}\n")
+            for l in lines:
+                try:
+                    translated = tx.translate(l, target=lang, source=src_lang)
+                except:
+                    continue
+                f.write(translated + "\n")
