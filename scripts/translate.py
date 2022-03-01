@@ -1,6 +1,6 @@
 import os
 from os.path import dirname, join, exists
-
+from ovos_utils.bracket_expansion import expand_options
 from googletranslate_neon_plugin import GoogleTranslator
 
 tx = GoogleTranslator()
@@ -33,8 +33,10 @@ for lang in target_langs:
         with open(dst, "w") as f:
             f.write(f"# auto translated from {src_lang} to {lang}\n")
             for l in lines:
-                try:
-                    translated = tx.translate(l, target=lang, source=src_lang)
-                except:
-                    continue
-                f.write(translated + "\n")
+                expanded = expand_options(l)
+                for l2 in expanded:
+                    try:
+                        translated = tx.translate(l2, target=lang, source=src_lang)
+                    except:
+                        continue
+                    f.write(translated + "\n")
