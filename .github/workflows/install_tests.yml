@@ -50,4 +50,4 @@ jobs:
           pip install ovos-skills-manager~=0.0.10
       - name: Install skill with osm
         run: |
-          osm install https://github.com/${{ github.repository_owner }}/${{ github.event.repository.name }}
+          python scripts/osm_install.py
