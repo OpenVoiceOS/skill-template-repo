@@ -53,15 +53,16 @@ if not exists(readme):
     with open(readme, "w") as f:
         f.write(skill.generate_readme())
 
-if has_homescreen:
+if has_homescreen and not exists(desktopf):
     with open(desktopf, "w") as f:
         f.write(skill.desktop_file)
 
-with open(jsonf, "w") as f:
-    data = skill.json
-    if not has_android or not has_homescreen:
-        data.pop("android")
-    if not has_homescreen:
-        data.pop("desktop")
-        data["desktopFile"] = False
-    json.dump(data, f, indent=4)
+if not exists(jsonf):
+    with open(jsonf, "w") as f:
+        data = skill.json
+        if not has_android or not has_homescreen:
+            data.pop("android")
+        if not has_homescreen:
+            data.pop("desktop")
+            data["desktopFile"] = False
+        json.dump(data, f, indent=4)
