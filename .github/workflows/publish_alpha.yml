@@ -39,6 +39,9 @@ jobs:
       - name: Install OSM
         run: |
           pip install ovos-skills-manager~=0.0.10
+      - name: Migrate old location to "locale" folder
+        run: |
+          python scripts/migrate_locale.py
       - name: Auto Translate
         run: |
           python scripts/translate.py

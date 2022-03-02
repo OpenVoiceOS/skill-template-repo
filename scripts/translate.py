@@ -10,6 +10,7 @@ target_langs = ["es-es", "de-de", "fr-fr", "it-it", "pt-pt"]
 
 exts = [".voc", ".dialog", ".intent", ".entity"]
 res_folder = join(dirname(dirname(__file__)), "locale")
+target_langs = list(set(target_langs + os.listdir(res_folder)))
 
 src_files = {}
 for root, dirs, files in os.walk(res_folder):
