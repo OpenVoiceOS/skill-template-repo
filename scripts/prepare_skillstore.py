@@ -65,9 +65,9 @@ if not exists(jsonf):
         if not has_homescreen:
             data.pop("desktop")
             data["desktopFile"] = False
-
-with open(jsonf) as f:
-    data = json.load(f)
+else:
+    with open(jsonf) as f:
+        data = json.load(f)
 
 # set dev branch
 data["branch"] = "dev"
