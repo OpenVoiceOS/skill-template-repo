@@ -19,6 +19,9 @@ jobs:
       - name: Install Build Tools
         run: |
           python -m pip install build wheel
+      - name: Install OSM
+        run: |
+          pip install ovos-skills-manager~=0.0.10
       - name: Remove alpha (declare stable)
         run: |
           VER=$(python setup.py --version)
