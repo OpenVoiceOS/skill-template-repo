@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-template-repo/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.1.0a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.1.0...HEAD)
+
+**Merged pull requests:**
+
+- feat/store\_workflow [\#10](https://github.com/OpenVoiceOS/skill-template-repo/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.1.0](https://github.com/OpenVoiceOS/skill-template-repo/tree/V0.1.0) (2022-03-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.1.0a1...V0.1.0)
 
 **Merged pull requests:**
 
