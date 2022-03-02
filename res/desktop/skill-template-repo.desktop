@@ -1,0 +1,10 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Name=skill-template-repo
+Exec=mycroft-gui-app --hideTextInput --skillskill-template-repo.OpenVoiceOS.home
+Icon=skill-template-repo.openvoiceossvg
+Categories=VoiceApp
+StartupNotify=false
+X-DBUS-StartupType=None
+X-KDE-StartupNotify=false
