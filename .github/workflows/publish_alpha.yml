@@ -57,7 +57,7 @@ jobs:
       - name: Commit to dev
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Increment Version
+          commit_message: Prepare alpha version package
           branch: dev
       - name: version
         run: echo "::set-output name=version::$(python setup.py --version)"
