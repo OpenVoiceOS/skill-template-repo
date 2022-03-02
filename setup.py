@@ -41,21 +41,21 @@ def required(requirements_file):
 
 
 # skill_id=package_name:SkillClass
-PLUGIN_ENTRY_POINT = 'replace-repo-name.replace-author=replace_package_name:ReplaceSkillNameSkill'
+PLUGIN_ENTRY_POINT = 'skill-template-repo.OpenVoiceOS=skill_template_repo:ReplaceSkillNameSkill'
 # in this case the skill_id is defined to purposefully replace the mycroft version of the skill,
 # or rather to be replaced by it in case it is present. all skill directories take precedence over plugin skills
 
 setup(
-    name='ovos-skill-replace-repo-name',
+    name='ovos-skill-template-repo',
     description='OpenVoiceOS skill',
     version=get_version(),
-    package_dir={"replace_package_name": ""},
-    package_data={'replace_package_name': ['locale/*', 'vocab/*', "dialog/*", "res/*", "ui/*"]},
-    packages=['replace_package_name'],
+    package_dir={"skill_template_repo": ""},
+    package_data={'skill_template_repo': ['locale/*', 'vocab/*', "dialog/*", "res/*", "ui/*"]},
+    packages=['skill_template_repo'],
     include_package_data=True,
-    url='https://github.com/replace-author/replace-repo-name',
+    url='https://github.com/OpenVoiceOS/skill-template-repo',
     license='Apache-2.0',
-    author='replace-author',
+    author='OpenVoiceOS',
     install_requires=required("requirements.txt"),
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
