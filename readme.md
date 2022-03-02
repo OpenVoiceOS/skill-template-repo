@@ -1,11 +1,11 @@
-# replace_package_name
+# skill-template-repo 
 
 start from this repo and do the following steps
 
 - search and replace the string `ReplaceSkillName` everywhere in this repo
-- search and replace the string `replace_package_name` everywhere in this repo
-- search and replace the string `replace-repo-name` everywhere in this repo
-- search and replace the string `replace-author` everywhere in this repo
+- search and replace the string `skill_template_repo` everywhere in this repo
+- search and replace the string `skill-template-repo` everywhere in this repo
+- search and replace the string `OpenVoiceOS` everywhere in this repo
 - create dev and master branches
 - make dev default branch
 - set PYPI_TOKEN in action secrets
