@@ -1,5 +1,9 @@
 # Changelog
 
+## [V1.0.0](https://github.com/OpenVoiceOS/skill-template-repo/tree/V1.0.0) (2022-03-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V1.0.0a1...V1.0.0)
+
 ## [V1.0.0a1](https://github.com/OpenVoiceOS/skill-template-repo/tree/V1.0.0a1) (2022-03-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-template-repo/compare/V0.1.0...V1.0.0a1)
