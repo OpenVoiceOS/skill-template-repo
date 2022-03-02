@@ -57,16 +57,17 @@ if has_homescreen and not exists(desktopf):
     with open(desktopf, "w") as f:
         f.write(skill.desktop_file)
 
-data = skill.json
-
-
 if not exists(jsonf):
+    data = skill.json
     with open(jsonf, "w") as f:
         if not has_android or not has_homescreen:
             data.pop("android")
         if not has_homescreen:
             data.pop("desktop")
             data["desktopFile"] = False
+
+with open(jsonf) as f:
+    data = json.load(f)
 
 # set dev branch
 data["branch"] = "dev"

@@ -11,6 +11,11 @@ class ReplaceSkillNameSkill(OVOSSkill):
         registered with the system. Intents will be registered and Skill
         settings will be available."""
         my_setting = self.settings.get('my_setting')
+        self.add_event("skill-template-repo.OpenVoiceOS.home", self.handle_homescreen)
+
+    def handle_homescreen(self, message):
+        """ handle open skill """
+        self.gui.show_text("hello homescreen!", override_idle=True)
 
     @intent_handler('HowAreYou.intent')
     def handle_how_are_you_intent(self, message):
