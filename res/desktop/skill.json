@@ -1,0 +1,29 @@
+{
+    "authorname": "OpenVoiceOS",
+    "foldername": "skill-template-repo",
+    "url": "https://github.com/OpenVoiceOS/skill-template-repo",
+    "branch": "dev",
+    "license": "apache-2.0",
+    "tags": [
+        "permissive-license"
+    ],
+    "short_description": "start from this repo and do the following steps",
+    "last_updated": "2022-03-01T20:03:23Z",
+    "skillname": "replace_package_name",
+    "description": "start from this repo and do the following steps\n\n\nworkflows are setup so you never touch a version file, make a github release or publish to pypi manually again!\n\n  - alpha version published and github prerelease created\n  - run codecov\n  - run unit tests\n  - run license tests if requirements.txt changes\n  - run plugin tests\n  - auto translate resource files\n  - increase package version\n  - generate changelog\n  - commit version bump to dev\n  - merge dev to master\n  - create github release\n  - publish to pypi\nsearch and replace the string ReplaceSkillName everywhere in this repo\n * search and replace the string replace_package_name everywhere in this repo\n * search and replace the string replace-repo-name everywhere in this repo\n * search and replace the string replace-author everywhere in this repo\n * create dev and master branches\n * make dev default branch\n * set PYPI_TOKEN in action secrets\n * disable wiki/projects\n * disable merge commits and enable auto deletion of head branches on PR merge\n * edit license_tests.py settings to your liking\n * setup codecov\n * on PR to dev\n * on commit to dev\n * manually trigger one of the workflows for major/minor/build/alpha release in the actions tab",
+    "requirements": {
+        "python": [
+            "ovos_workshop>=0.0.5",
+            "ovos_utils>=0.0.18"
+        ],
+        "skill": [],
+        "system": {}
+    },
+    "desktopFile": false,
+    "examples": [
+        "how have you been",
+        "how has your day been",
+        "how are you",
+        "how are you doing"
+    ]
+}
