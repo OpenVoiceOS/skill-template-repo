@@ -31,7 +31,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: dev
+        ref: ${{ github.ref_name }}
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
     - name: Setup Python
       uses: actions/setup-python@v4

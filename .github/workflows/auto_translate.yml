@@ -33,5 +33,5 @@ jobs:
       - name: Commit to dev
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Increment Version
+          commit_message: autotranslate
           branch: dev
