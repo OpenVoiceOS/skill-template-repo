@@ -1,17 +1,9 @@
 name: Auto translate
 on:
-  push:
-    branches:
-      - dev
-    paths:
-      - 'locale/en-us/**'
-      - 'dialog/en-us/**'
-      - 'vocab/en-us/**'
   workflow_dispatch:
 
 jobs:
   autotranslate:
-    if: "! contains(toJSON(github.event.commits.*.message), 'autotranslate')"
     env:
       API_KEY: ${{secrets.DL_API_KEY}}
     runs-on: ubuntu-latest
